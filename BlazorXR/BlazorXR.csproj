@@ -9,9 +9,11 @@
   <ItemGroup>
     <Content Remove="wwwroot\images\" />
     <Content Remove="wwwroot\scripts\" />
+    <Content Remove="wwwroot\models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\scripts\" />
+    <Folder Include="wwwroot\models\" />
   </ItemGroup>
 </Project>

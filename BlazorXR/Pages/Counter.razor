@@ -8,35 +8,42 @@
     }
 </style>
 <h1>Counter</h1>
-<p role="status">Current count: @currentCount</p>
+
 <p><h3>Use your mouse to drag the shapes in the square and look at them from different perspectives. Use your WASD keys to move about in the environment.</h3></p>
 <p>If you have a VR headset, put it on and access this page, then select the "VR" button at the bottom-right of the viewfinder.</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">BIGGER</button>
-<button class="btn btn-primary" @onclick="DecrementCount">smaller</button>
+<p>Click the Add and Subtract buttons to add and subtract 1 from the sphere radius.</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Add</button>
+<button class="btn btn-primary" @onclick="DecrementCount">Subtract</button>
+<br />
+<br />
+<p role="status">Sphere radius: @currentCount</p>
+
+
 
 <div id="suburbanAmericaFromTheSky">
     <a-scene embedded>
         <a-box position="-1 0.5 -3" rotation="0 45 0"
                material="src: images/dark-wood-texture-seamless-ideas-4-1.jpeg"></a-box>
-        <a-sphere position="0 1.25 -5" radius="@currentCount" color="purple"></a-sphere>
+        <a-sphere position="0 1.25 -5" radius="@currentCount" material="src: images/TransparentGrid.gif; transparent: true;"></a-sphere>
         <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
         <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="transparent: true; opacity: 0.5;"></a-plane>
-        <a-sky color="#ECECEC" src="images/PondPanoramaBase.gif"></a-sky>
+        <a-sky color="#ECECEC" src="images/PondPanoramaBaseWithGhost.gif"></a-sky>
     </a-scene>
 </div>
 
 @code {
-    private decimal currentCount = 0.2M;
+    private decimal currentCount = -20M;
 
     private void IncrementCount()
     {
-        currentCount += 0.2M;
+        currentCount += 1M;
     }
 
     private void DecrementCount()
     {
-        currentCount -= 0.2M;
+        currentCount -= 1M;
     }
 }
 

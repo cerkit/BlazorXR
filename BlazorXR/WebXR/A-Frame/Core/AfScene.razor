@@ -1,0 +1,12 @@
+﻿<a-scene >
+    @ChildContent
+</a-scene>
+
+@code {
+    [Parameter]
+    public bool Embedded { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
+

@@ -1,0 +1,12 @@
+﻿<a-box position="@Position" rotation="@Rotation" color="@Color"></a-box>
+
+@code {
+    [Parameter]
+    public string Color { get; set; }
+    // TODO: Convert these to vectors
+    [Parameter]
+    public string Position { get; set; }
+    [Parameter]
+    public string Rotation { get; set; }
+}
+

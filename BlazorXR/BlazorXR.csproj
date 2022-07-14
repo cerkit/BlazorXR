@@ -15,5 +15,13 @@
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\scripts\" />
     <Folder Include="wwwroot\models\" />
+    <Folder Include="WebXR\" />
+    <Folder Include="WebXR\A-Frame\" />
+    <Folder Include="WebXR\A-Frame\Core\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="WebXR\" />
+    <None Remove="WebXR\A-Frame\" />
+    <None Remove="WebXR\A-Frame\Core\" />
   </ItemGroup>
 </Project>

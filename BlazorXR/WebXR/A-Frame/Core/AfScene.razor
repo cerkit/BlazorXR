@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿<a-scene embedded="@(Embedded ? "embedded" : "")">
-=======
-﻿<a-scene embedded="@(Embedded ? "true" : "")">
->>>>>>> e6ea07d75f0409e6775343e52bf4855943bc40be
+﻿﻿<a-scene embedded="@(Embedded ? "embedded" : "")">
     @ChildContent
 </a-scene>
 
@@ -10,11 +6,7 @@
     [Parameter]
     public bool Embedded { get; set; } = false;
 
-<<<<<<< HEAD
     [Parameter]
-=======
-    [CascadingParameter]
->>>>>>> e6ea07d75f0409e6775343e52bf4855943bc40be
     public RenderFragment? ChildContent { get; set; }
 }
 

@@ -2,16 +2,16 @@
 
 @using BlazorXR.WebXR.A_Frame.Core
 <h3>Hello, BlazorXR!</h3>
-<label for="box-colour">Box Color (HTML Color)</label>
-<input type="text" id="box-color" data-random="@RandomData" placeholder="e.g. #FF0000" value="@Color" />
-<br />
+<form action="#">
+<label for="box-color">Box Color (HTML Color)</label>
+	<input type="text" id="box-color" data-random="@RandomData" placeholder="e.g. #FF0000" value="@Color" />
+</form>
+<AfScene Embedded="true">
+    <AfBox Color="@Color!.Value" Position="-1 0.5 -3" Rotation="0 45 0"></AfBox>
+</AfScene>
 
-@*
-    <AfBox Color="@Color.Value" Position="-1 0.5 -3" Rotation="0 45 0"></AfBox>
-</>
-*@
 @code {
-    InputText Color;
+    InputText? Color { get; set; } = new InputText { Value = "#FF0000" };
     // Pass some random data to the client browser through a data attribute...
     string RandomData { get; set; } = "{ \"app-name\" : \"BlazorXR\" }";
 }

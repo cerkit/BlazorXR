@@ -10,10 +10,20 @@
     <Content Remove="wwwroot\images\" />
     <Content Remove="wwwroot\scripts\" />
     <Content Remove="wwwroot\models\" />
+    <Content Remove="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\scripts\" />
     <Folder Include="wwwroot\models\" />
+    <Folder Include="WebXR\" />
+    <Folder Include="WebXR\A-Frame\" />
+    <Folder Include="WebXR\A-Frame\Core\" />
+    <Folder Include="wwwroot\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="WebXR\" />
+    <None Remove="WebXR\A-Frame\" />
+    <None Remove="WebXR\A-Frame\Core\" />
   </ItemGroup>
 </Project>

@@ -1,12 +1,12 @@
-﻿<a-scene >
+﻿<a-scene embedded="@(Embedded ? "true" : "")">
     @ChildContent
 </a-scene>
 
 @code {
     [Parameter]
-    public bool Embedded { get; set; }
+    public bool Embedded { get; set; } = false;
 
-    [Parameter]
-    public RenderFragment ChildContent { get; set; }
+    [CascadingParameter]
+    public RenderFragment? ChildContent { get; set; }
 }
 

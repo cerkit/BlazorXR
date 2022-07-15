@@ -5,11 +5,10 @@
 <label for="box-colour">Box Color (HTML Color)</label>
 <input type="text" id="box-color" data-random="@RandomData" placeholder="e.g. #FF0000" value="@Color" />
 <br />
-
-@*
+<AfScene Embedded="true">
     <AfBox Color="@Color.Value" Position="-1 0.5 -3" Rotation="0 45 0"></AfBox>
-</>
-*@
+</AfScene>
+
 @code {
     InputText Color;
     // Pass some random data to the client browser through a data attribute...

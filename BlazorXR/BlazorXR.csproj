@@ -10,6 +10,7 @@
     <Content Remove="wwwroot\images\" />
     <Content Remove="wwwroot\scripts\" />
     <Content Remove="wwwroot\models\" />
+    <Content Remove="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
@@ -18,6 +19,7 @@
     <Folder Include="WebXR\" />
     <Folder Include="WebXR\A-Frame\" />
     <Folder Include="WebXR\A-Frame\Core\" />
+    <Folder Include="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="WebXR\" />

@@ -23,4 +23,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITLAB_TOKEN }}
           BRANCH: ${{ secrets.GITLAB_BRANCH }}
-        run: "curl -X POST --fail -F token=$TOKEN -F ref=$BRANCH https://gitlab.com/api/v4/projects/37838448/trigger/pipeline
+        run: "curl -X POST --fail -F token=$TOKEN -F ref=$BRANCH https://gitlab.com/api/v4/projects/37838448/trigger/pipeline"
